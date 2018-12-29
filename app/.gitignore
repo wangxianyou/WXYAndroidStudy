@@ -1,0 +1,16 @@
+.gradle
+/local.properties
+.DS_Store
+build/
+/captures
+*.iml
+.idea/
+gradle/
+app/src/main/gen/
+#package-lock.json
+#package.json
+java_pid820.hprof
+#/node_modules
+#app/src/main/assets/index.android.bundle
+#app/src/main/assets/index.android.bundle.meta
+#.flowconfig
