@@ -1,9 +1,11 @@
 package com.wxy.wxyandroidstudy.LowerLevel.TheFirstPass.Test1
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.Menu
 import com.wxy.wxyandroidstudy.R
 import kotlinx.android.synthetic.main.lower_pass_one_test_one_activity_one.*
 
@@ -27,6 +29,10 @@ class ActivityTestOne : AppCompatActivity() {
         Log.e("www","ActivityTestOne---- onStart。。。。。")
     }
 
+    override fun onRestart() {
+        super.onRestart()
+        Log.e("www","ActivityTestTwo---- onRestart。。。。。")
+    }
     override fun onStop() {
         super.onStop()
         Log.e("www","ActivityTestOne---- onStop。。。。。")
@@ -45,5 +51,15 @@ class ActivityTestOne : AppCompatActivity() {
         btnIntent.setOnClickListener {
             ActivityTestTwo.startActivity(this)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        Log.e("www","onCreateOptionsMenu。。。。。")
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        Log.e("www","ActivityTestOne---- onNewIntent。。。。。")
     }
 }

@@ -4,8 +4,8 @@
                                              android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btn_intent"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转"/>
+        android:text="回退"/>
 </android.support.constraint.ConstraintLayout>

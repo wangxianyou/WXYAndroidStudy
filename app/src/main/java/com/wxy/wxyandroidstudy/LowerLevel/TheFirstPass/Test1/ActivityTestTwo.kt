@@ -6,12 +6,19 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.wxy.wxyandroidstudy.R
+import kotlinx.android.synthetic.main.lower_pass_one_test_one_activity_two.*
 
 class ActivityTestTwo:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.e("www","ActivityTestTwo---- onCreate。。。。。")
         setContentView(R.layout.lower_pass_one_test_one_activity_two)
+        initListener()
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.e("www","ActivityTestTwo---- onRestart。。。。。")
     }
     override fun onDestroy() {
         super.onDestroy()
@@ -37,9 +44,14 @@ class ActivityTestTwo:AppCompatActivity() {
         super.onPause()
         Log.e("www","ActivityTestTwo---- onPause。。。。。")
     }
+    fun initListener(){
+        btn_back.setOnClickListener {
+            finish()
+        }
+    }
     companion object {
         fun startActivity(context: Context){
-            var intent = Intent(context,this::class.java)
+            var intent = Intent(context,ActivityTestTwo::class.java)
             context.startActivity(intent)
         }
     }

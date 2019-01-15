@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <!--<activity android:name=".LowerLevel.TheFirstPass.Test1.ActivityTestOne"></activity>-->
-        <activity android:name=".LowerLevel.TheFirstPass.Test1.ActivityTestTwo"></activity>
+        <activity android:name=".LowerLevel.TheFirstPass.Test1.ActivityTestTwo"/>
     </application>
 
 </manifest>
