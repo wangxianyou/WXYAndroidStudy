@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.LowerLevel.TheFirstPass.Test1
+package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1.activity
 
 import android.content.Context
 import android.content.Intent
@@ -51,7 +51,7 @@ class ActivityTestTwo:AppCompatActivity() {
     }
     companion object {
         fun startActivity(context: Context){
-            var intent = Intent(context,ActivityTestTwo::class.java)
+            var intent = Intent(context, ActivityTestTwo::class.java)
             context.startActivity(intent)
         }
     }

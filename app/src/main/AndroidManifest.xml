@@ -9,15 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LowerLevel.TheFirstPass.Test1.ActivityTestOne">
+        <activity android:name=".lowerlevel.thefirstpass.test1.test">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <!--<activity android:name=".LowerLevel.TheFirstPass.Test1.ActivityTestOne"></activity>-->
-        <activity android:name=".LowerLevel.TheFirstPass.Test1.ActivityTestTwo"/>
+        <!--<activity android:name=".LowerLevel.TheFirstPass.Test1.activity.ActivityTestOne"></activity>-->
+        <activity android:name=".lowerlevel.thefirstpass.test1.activity.ActivityTestTwo"/>
+        <activity android:name=".lowerlevel.thefirstpass.test1.activity.StandardActivity"/>
+        <activity android:name=".lowerlevel.thefirstpass.test1.activity.SingleTopActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity=".singletop"/>
+        <activity android:name=".lowerlevel.thefirstpass.test1.activity.SingleTaskActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=".singletask"/>
+        <activity android:name=".lowerlevel.thefirstpass.test1.activity.OtherActivity"/>
+
     </application>
 
 </manifest>
