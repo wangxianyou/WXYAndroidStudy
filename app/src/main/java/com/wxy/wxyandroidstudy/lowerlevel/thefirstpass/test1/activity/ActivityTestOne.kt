@@ -2,10 +2,10 @@ package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.Menu
+import androidx.appcompat.app.AppCompatActivity
 import com.wxy.wxyandroidstudy.R
 import kotlinx.android.synthetic.main.lower_pass_one_test_one_activity_one.*
 

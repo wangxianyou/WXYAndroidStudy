@@ -3,9 +3,9 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="回退"/>
+    <com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom.TestViewSpuare
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorAccent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

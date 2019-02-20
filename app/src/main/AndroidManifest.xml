@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.wxy.wxyandroidstudy">
 
     <application
@@ -9,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lowerlevel.thefirstpass.test1.test">
+        <activity android:name=".lowerlevel.thefirstpass.test2.CustomViewActicity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN"/>
@@ -25,7 +26,8 @@
         <activity android:name=".lowerlevel.thefirstpass.test1.activity.SingleTaskActivity"
             android:launchMode="singleTask"
             android:taskAffinity=".singletask"/>
-        <activity android:name=".lowerlevel.thefirstpass.test1.activity.OtherActivity"/>
+        <activity android:name=".lowerlevel.thefirstpass.test1.activity.OtherActivity"
+            android:launchMode="singleTask"/>
 
     </application>
 
