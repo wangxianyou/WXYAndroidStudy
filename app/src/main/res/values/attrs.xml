@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TestViewSpuare">
+        <attr name="defaultSize" format="dimension">100</attr>
+    </declare-styleable>
+</resources>

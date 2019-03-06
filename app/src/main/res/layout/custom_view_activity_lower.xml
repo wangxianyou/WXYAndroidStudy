@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
+<com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom.CustomViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:custom="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="300dp"
+                                                   android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
 
-    <com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom.TestViewSpuare
-        android:layout_width="match_parent"
+    <!--<com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom.TestViewSpuare
+        android:layout_width="200dp"
         android:layout_height="100dp"
+        android:background="@color/colorAccent"
         android:textColor="@color/colorAccent"
-        android:background="@color/colorAccent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        custom:defaultSize="300dp"/>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hfdhgkG"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="谁都更好；阿嘎；然后"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdgjLGJ胡椒粉及咖喱饭撒"/>
+</com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom.CustomViewGroup>
