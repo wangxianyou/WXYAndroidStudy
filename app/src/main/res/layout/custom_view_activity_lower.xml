@@ -13,16 +13,21 @@
         custom:defaultSize="300dp"/>-->
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hfdhgkG"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="谁都更好；阿嘎；然后"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sdgjLGJ胡椒粉及咖喱饭撒"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="hfdhgkG"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="谁都更好；阿嘎；然后"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="sdgjLGJ胡椒粉及咖喱饭撒"/>-->
+
+
+    <com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom.MiClockView
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
 </com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom.CustomViewGroup>
