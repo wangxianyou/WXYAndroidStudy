@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,9 +8,15 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_ifly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="讯飞语音听写"/>
+
+    <Button
         android:id="@+id/click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="点击跳转到activity"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

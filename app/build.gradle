@@ -28,14 +28,17 @@ repositories {
     maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 }
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.2-alpha01'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.2-alpha01'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"//主要是这两个依赖
-    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"//主要是这两个依赖
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    //主要是这两个依赖
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    //主要是这两个依赖
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation project(':speechDemo')
 }
