@@ -4,13 +4,14 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <Button
-        android:id="@+id/btn_start_speak"
+        android:id="@+id/startSpeak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="开启语音听写dialog"/>
     <TextView
         android:id="@+id/tv_speak_show"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="监听文字"/>
 
 </LinearLayout>
