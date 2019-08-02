@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,label">
-        <activity android:name=".MainActivity">
+        <activity android:name=".lowerlevel.thefirstpass.test3.LayoutAnimationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.intent.action.MAIN"/>
@@ -24,15 +24,12 @@
         <activity android:name=".lowerlevel.thefirstpass.test1.activity.StandardActivity"/>
         <activity
             android:name=".lowerlevel.thefirstpass.test1.activity.SingleTopActivity"
-            android:launchMode="singleTop"
-            android:taskAffinity=".singletop"/>
+            android:launchMode="singleTop"/>
         <activity
             android:name=".lowerlevel.thefirstpass.test1.activity.SingleTaskActivity"
-            android:launchMode="singleTask"
-            android:taskAffinity=".singletask"/>
-        <activity
-            android:name=".lowerlevel.thefirstpass.test1.activity.OtherActivity"
             android:launchMode="singleTask"/>
+        <activity
+            android:name=".lowerlevel.thefirstpass.test1.activity.OtherActivity"/>
         <activity android:name="com.wxy.demo.iflytek.SpeakToTxtActivity"/>
     </application>
 

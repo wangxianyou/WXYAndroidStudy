@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开动画"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOpen"
+        android:text="关闭动画"/>
+
+    <ImageView
+        android:id="@+id/imgAnimator"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnClose"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <Button
+        android:id="@+id/addLayoutAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增加view动画"
+        android:layout_below="@id/imgAnimator"/>
+
+    <LinearLayout
+        android:id="@+id/animationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAnimator"
+        android:layout_alignParentRight="true"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:text="测试textview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="测试textview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/content_color"
+            android:padding="10dp"
+            android:text="测试textview"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,16 +1,19 @@
 package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
 import com.wxy.wxyandroidstudy.R;
+import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1.activity.SingleTaskActivity;
 
-public class test extends BaseActivity {
+import androidx.annotation.Nullable;
+
+public class TestActivity extends BaseActivity {
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,6 +29,13 @@ public class test extends BaseActivity {
                         break;
                 }
                 return false;
+            }
+        });
+        tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TestActivity.this, SingleTaskActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -14,5 +14,9 @@ class SingleTopActivity:BaseActivity() {
             var intent = Intent(this,SingleTopActivity::class.java)
             startActivity(intent)
         }
+        btnOtherIntent.setOnClickListener {
+            var intent = Intent(this,OtherActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
