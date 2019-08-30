@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test3
+package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test3_anim
 
 import android.animation.Animator
 import android.animation.IntEvaluator

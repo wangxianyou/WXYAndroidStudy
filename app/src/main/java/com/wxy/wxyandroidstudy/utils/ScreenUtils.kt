@@ -6,7 +6,7 @@ import android.view.WindowManager
 
 class ScreenUtils {
     companion object {
-        fun ScreenWidth(context: Context):Int{
+        @JvmStatic fun ScreenWidth(context: Context):Int{
             val windowManager:WindowManager = context.getSystemService(Context.WINDOW_SERVICE) as WindowManager
             val dm = DisplayMetrics()
             windowManager.defaultDisplay.getMetrics(dm)

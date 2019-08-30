@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1;
+package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.wxy.wxyandroidstudy.R;
-import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1.activity.SingleTaskActivity;
+import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity.activity.SingleTaskActivity;
 
 import androidx.annotation.Nullable;
 

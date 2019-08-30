@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2
+package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2_view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

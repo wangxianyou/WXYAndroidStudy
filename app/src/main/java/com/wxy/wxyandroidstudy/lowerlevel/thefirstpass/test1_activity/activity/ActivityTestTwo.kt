@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1.activity
+package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity.activity
 
 import android.content.Context
 import android.content.Intent

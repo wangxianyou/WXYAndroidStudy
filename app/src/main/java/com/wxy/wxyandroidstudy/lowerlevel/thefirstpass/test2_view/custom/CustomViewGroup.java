@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2.custom;
+package com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test2_view.custom;
 
 import android.content.Context;
 import android.util.AttributeSet;
