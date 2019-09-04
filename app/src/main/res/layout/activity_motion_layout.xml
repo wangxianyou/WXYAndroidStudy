@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layoutDescription="@xml/motion_activity_motion"
+    app:motionDebug="SHOW_PROGRESS">
+
+    <ImageView
+        android:id="@+id/icon_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/icon_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon" />
+
+    <ImageView
+        android:id="@+id/icon_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

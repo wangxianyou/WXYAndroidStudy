@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/icon_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/icon_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/icon_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+        <Constraint
+            android:id="@+id/icon_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <Constraint
+            android:id="@+id/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="3000">
+        <KeyFrameSet>
+            <!-- left -->
+            <KeyPosition
+                app:motionTarget="@id/icon_left"
+                app:framePosition="18"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.7"
+                app:percentY="0.2"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_left"
+                app:framePosition="40"
+                app:keyPositionType="parentRelative"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.9"
+                app:percentY="0.65"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_left"
+                app:framePosition="60"
+                app:keyPositionType="parentRelative"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.8"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_left"
+                app:framePosition="80"
+                app:keyPositionType="parentRelative"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.1"
+                app:percentY="0.7"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_left"
+                app:framePosition="90"
+                app:keyPositionType="parentRelative"
+                app:pathMotionArc="startVertical"
+                app:percentX="0.5"
+                app:percentY="0.5"/>
+            <!-- center -->
+            <KeyPosition
+                app:motionTarget="@id/icon_center"
+                app:framePosition="20"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.7"
+                app:percentY="0.2"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_center"
+                app:framePosition="42"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.9"
+                app:percentY="0.65"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_center"
+                app:framePosition="62"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.5"
+                app:percentY="0.8"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_center"
+                app:framePosition="82"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.1"
+                app:percentY="0.7"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_center"
+                app:framePosition="92"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.5"
+                app:percentY="0.5"/>
+            <!-- right -->
+            <KeyPosition
+                app:motionTarget="@id/icon_right"
+                app:framePosition="22"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.7"
+                app:percentY="0.2"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_right"
+                app:framePosition="44"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.9"
+                app:percentY="0.65"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_right"
+                app:framePosition="64"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.5"
+                app:percentY="0.8"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_right"
+                app:framePosition="84"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.1"
+                app:percentY="0.7"/>
+            <KeyPosition
+                app:motionTarget="@id/icon_right"
+                app:framePosition="94"
+                app:keyPositionType="parentRelative"
+                app:percentX="0.5"
+                app:percentY="0.5"/>
+        </KeyFrameSet>
+        <OnClick
+            app:clickAction="toggle"
+            app:targetId="@id/icon_right" />
+    </Transition>
+</MotionScene>
