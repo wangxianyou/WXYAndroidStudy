@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.wxy.wxyandroidstudy">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wxy.wxyandroidstudy">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,label">
-        <activity android:name=".lowerlevel.thefirstpass.test3_anim.MotionLayoutActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <!--<activity android:name=".LowerLevel.TheFirstPass.Test1.activity.ActivityTestOne"></activity>-->
-        <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.ActivityTestTwo"/>
-        <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.StandardActivity"/>
+        <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.ActivityTestTwo" />
+        <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.StandardActivity" />
         <activity
             android:name=".lowerlevel.thefirstpass.test1_activity.activity.SingleTopActivity"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTop" />
         <activity
             android:name=".lowerlevel.thefirstpass.test1_activity.activity.SingleTaskActivity"
-            android:launchMode="singleTask"/>
-        <activity
-            android:name=".lowerlevel.thefirstpass.test1_activity.activity.OtherActivity"/>
-        <activity android:name="com.wxy.demo.iflytek.SpeakToTxtActivity"/>
+            android:launchMode="singleTask" />
+        <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.OtherActivity" />
+        <activity android:name="com.wxy.demo.iflytek.SpeakToTxtActivity" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>
