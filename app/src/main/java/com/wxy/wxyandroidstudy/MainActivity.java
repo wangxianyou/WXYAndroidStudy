@@ -3,7 +3,10 @@ package com.wxy.wxyandroidstudy;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,6 +49,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         initListener();
+        DisplayMetrics metrics = getResources().getDisplayMetrics();
+        float x = metrics.xdpi;
+        Log.e("www", "屏幕密度： "+x);
+
     }
 
     private void initListener() {
@@ -77,7 +84,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
         }
     }
-
+private static AsyncTask asyncTask = new AsyncTask() {
+    @Override
+    protected Object doInBackground(Object[] objects) {
+        return null;
+    }
+};
 
     AlertDialog dialog;
 
