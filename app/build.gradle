@@ -22,10 +22,18 @@ android {
         sourceCompatibility 1.8
         targetCompatibility 1.8
     }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'x86_64'
+            universalApk true
+        }
+    }
 }
 repositories {
     //修改成国内阿里云的maven地址，否则某些地方下载不下来
-    maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
 }
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -46,4 +54,9 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     kapt 'com.github.bumptech.glide:compiler:4.7.1'
+    //rxjava
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    //log
+    implementation 'com.apkfuns.logutils:library:1.7.5'
 }

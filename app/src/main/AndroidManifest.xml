@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,label">
-        <activity android:name=".lowerlevel.thefirstpass.test6_thread.Notify_WaitTest">
+        <activity android:name=".lowerlevel.thefirstpass.test7_rxjava.RxjavaTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
