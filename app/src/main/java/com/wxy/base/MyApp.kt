@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.base
+package com.wxy.base
 
 import android.app.Application
 

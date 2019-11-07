@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,label">
-        <activity android:name=".lowerlevel.thefirstpass.test7_rxjava.RxjavaTestActivity">
+        <activity android:name=".lowerlevel.thefirstpass.test8_retrofit.RetrofitTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
