@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/StartTheme"
         tools:replace="android:icon,label,name">
-        <activity android:name=".lowerlevel.thefirstpass.test9_annotation.AnnotationActivity">
+        <activity android:name=".highlevel.test1_ipc.contentprovider.ActivityProvider">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,8 @@
         </activity>
         <!--<activity android:name=".LowerLevel.TheFirstPass.Test1.activity.ActivityTestOne"></activity>-->
         <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.ActivityTestTwo" />
-        <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.StandardActivity" />
+        <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.StandardActivity"
+            android:process=":remote"/>
         <activity
             android:name=".lowerlevel.thefirstpass.test1_activity.activity.SingleTopActivity"
             android:launchMode="singleTop" />
@@ -32,6 +33,15 @@
             android:launchMode="singleTask" />
         <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.OtherActivity" />
         <activity android:name="com.wxy.demo.iflytek.SpeakToTxtActivity" />
+        <service android:name=".highlevel.test1_ipc.messenger.MyService"
+            android:process=":remote"/>
+        <service android:name=".highlevel.test1_ipc.aidl.AidlService"
+            android:process=":remote"/>
+        <provider
+            android:authorities="com.wxy.wxyandroidstudy.mprovider"
+            android:process=":provider"
+            android:permission="com.wxy.wxyandroidstudy.PROVIDER"
+            android:name=".highlevel.test1_ipc.contentprovider.BookContentProvider"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
