@@ -46,6 +46,7 @@ public class MyService extends Service {
         }
     }
 
+
     private Messenger messenger = new Messenger(new MyServiceHandle());
 
     @Nullable

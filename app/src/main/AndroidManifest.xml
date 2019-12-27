@@ -4,7 +4,7 @@
     package="com.wxy.wxyandroidstudy">
 
     <application
-        android:name="com.wxy.base.MyApplication"
+        android:name="com.wxy.base.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/StartTheme"
         tools:replace="android:icon,label,name">
-        <activity android:name=".highlevel.test1_ipc.contentprovider.ActivityProvider">
+        <activity android:name=".highlevel.test1_ipc.bindpool.BindPoolActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +36,8 @@
         <service android:name=".highlevel.test1_ipc.messenger.MyService"
             android:process=":remote"/>
         <service android:name=".highlevel.test1_ipc.aidl.AidlService"
+            android:process=":remote"/>
+        <service android:name=".highlevel.test1_ipc.bindpool.BindPoolService"
             android:process=":remote"/>
         <provider
             android:authorities="com.wxy.wxyandroidstudy.mprovider"

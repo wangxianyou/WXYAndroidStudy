@@ -24,6 +24,9 @@ public class ActivityProvider extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
+
+        int i = Integer.parseInt("12");
+
         Uri bookUri = Uri.parse("content://com.wxy.wxyandroidstudy.mprovider/book");
         ContentResolver bookResolver = getContentResolver();
         ContentValues bookValues = new ContentValues();
