@@ -11,8 +11,8 @@ import com.wxy.base.MyApp;
 import com.wxy.bean.User;
 import com.wxy.wxyandroidstudy.R;
 import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity.activity.StandardActivity;
-import com.wxy.wxyandroidstudy.utils.MyUtils;
-import com.wxy.wxyandroidstudy.utils.TestUtils;
+import com.wxy.utils.MyUtils;
+import com.wxy.utils.TestUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

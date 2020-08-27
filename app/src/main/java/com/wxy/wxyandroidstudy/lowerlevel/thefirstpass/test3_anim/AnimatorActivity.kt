@@ -15,7 +15,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.wxy.wxyandroidstudy.R
-import com.wxy.wxyandroidstudy.utils.ScreenUtils
+import com.wxy.utils.ScreenUtils
 import kotlinx.android.synthetic.main.activity_animator.*
 
 class AnimatorActivity : AppCompatActivity() {

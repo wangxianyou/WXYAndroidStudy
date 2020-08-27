@@ -6,8 +6,8 @@ import com.apkfuns.logutils.LogUtils
 import com.wxy.base.AppConst
 import com.wxy.wxyandroidstudy.R
 import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity.BaseActivity
-import com.wxy.wxyandroidstudy.utils.MyUtils
-import com.wxy.wxyandroidstudy.utils.TestUtils
+import com.wxy.utils.MyUtils
+import com.wxy.utils.TestUtils
 import kotlinx.android.synthetic.main.lower_pass_one_test_one_activity_one.*
 import java.io.File
 import java.io.FileInputStream

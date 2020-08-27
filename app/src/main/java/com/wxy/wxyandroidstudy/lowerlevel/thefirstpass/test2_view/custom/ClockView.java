@@ -15,7 +15,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.wxy.wxyandroidstudy.R;
-import com.wxy.wxyandroidstudy.utils.DensityUtils;
+import com.wxy.utils.DensityUtils;
 
 import java.util.Calendar;
 

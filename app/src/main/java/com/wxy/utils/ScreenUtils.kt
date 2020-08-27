@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.utils
+package com.wxy.utils
 
 import android.content.Context
 import android.util.DisplayMetrics

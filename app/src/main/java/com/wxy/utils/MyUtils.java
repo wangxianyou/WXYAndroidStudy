@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.utils;
+package com.wxy.utils;
 
 import android.app.ActivityManager;
 import android.content.Context;

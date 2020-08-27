@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.utils;
+package com.wxy.utils;
 
 /**
  * @author wxy

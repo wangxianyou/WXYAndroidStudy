@@ -26,5 +26,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="dialog测试"/>
+    <Button
+        android:id="@+id/mFlutter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="flutter_demo"/>
+    <Button
+        android:id="@+id/mAnno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义注解"/>
 
 </LinearLayout>

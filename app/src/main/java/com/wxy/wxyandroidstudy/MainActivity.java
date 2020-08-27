@@ -2,8 +2,6 @@ package com.wxy.wxyandroidstudy;
 
 import android.app.AlertDialog;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -16,20 +14,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.DataSource;
-import com.bumptech.glide.load.engine.GlideException;
-import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.target.Target;
 import com.wxy.demo.iflytek.SpeakToTxtActivity;
+import com.wxy.utils.ScreenUtils;
 import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity.BaseActivity;
-import com.wxy.wxyandroidstudy.utils.ScreenUtils;
+import com.wxy.wxyandroidstudy.xx.InjectViewActivity;
 
 import java.util.Random;
 
-import androidx.annotation.Nullable;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.flutter.embedding.android.FlutterActivity;
 
 /**
  * @author wxy
@@ -41,6 +35,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     Button dialogClick;
     @BindView(R2.id.btn_ifly)
     Button btnIfly;
+    @BindView(R2.id.mFlutter)
+    Button mFlutter;
+    @BindView(R2.id.mAnno)
+    Button mAnno;
+
     private String[] str = {"讯飞语音听写", "其他"};
 
     @Override
@@ -51,7 +50,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initListener();
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         float x = metrics.xdpi;
-        Log.e("www", "屏幕密度： "+x);
+        Log.e("www", "屏幕密度： " + x);
 
     }
 
@@ -59,6 +58,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         btnIfly.setOnClickListener(this);
         click.setOnClickListener(this);
         dialogClick.setOnClickListener(this);
+        mFlutter.setOnClickListener(this);
+        mAnno.setOnClickListener(this);
     }
 
     @Override
@@ -80,16 +81,20 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                     }
                 }, 2000);
                 break;
+            case R.id.mFlutter:
+                Intent intent = FlutterActivity.withNewEngine()
+                                               .initialRoute("r1")
+                                               .build(this);
+                startActivity(intent);
+                break;
+            case R.id.mAnno:
+                startActivity(new Intent(MainActivity.this,
+                        InjectViewActivity.class));
+                break;
             default:
                 break;
         }
     }
-private static AsyncTask asyncTask = new AsyncTask() {
-    @Override
-    protected Object doInBackground(Object[] objects) {
-        return null;
-    }
-};
 
     AlertDialog dialog;
 
@@ -108,7 +113,7 @@ private static AsyncTask asyncTask = new AsyncTask() {
         window.setBackgroundDrawableResource(android.R.color.transparent);
         window.setGravity(Gravity.CENTER);
         WindowManager.LayoutParams lp = window.getAttributes();
-        lp.width = ScreenUtils.ScreenWidth(this) * 15/16;
+        lp.width = ScreenUtils.ScreenWidth(this) * 15 / 16;
         lp.height = ScreenUtils.ScreenHeight(this);
         window.setAttributes(lp);
 
@@ -122,20 +127,6 @@ private static AsyncTask asyncTask = new AsyncTask() {
 
             }
         });
-        String url = "http://www.chinanews.com/part/appzt/546/2019-03-26/U624P4T546D2030F25061DT20190905092935.gif";
-        Glide.with(this).load(url).listener(new RequestListener<Drawable>() {
-            @Override
-            public boolean onLoadFailed(@Nullable GlideException e, Object model,
-                                        Target<Drawable> target, boolean isFirstResource) {
-                return false;
-            }
-
-            @Override
-            public boolean onResourceReady(Drawable resource, Object model,
-                                           Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
-                return false;
-            }
-        }).into(img);
-
     }
+
 }
