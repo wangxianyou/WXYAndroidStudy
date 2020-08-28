@@ -14,11 +14,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.wxy.bean.User;
 import com.wxy.demo.iflytek.SpeakToTxtActivity;
 import com.wxy.utils.ScreenUtils;
 import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity.BaseActivity;
 import com.wxy.wxyandroidstudy.xx.InjectViewActivity;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import butterknife.BindView;
@@ -88,8 +92,16 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.mAnno:
-                startActivity(new Intent(MainActivity.this,
-                        InjectViewActivity.class));
+                Intent intent1 = new Intent(MainActivity.this,
+                        InjectViewActivity.class);
+                intent1.putExtra("name","wxy");
+                intent1.putExtra("isBoy",true);
+                User user = new User("11",22,true);
+                intent1.putExtra("str",new User[]{user});
+                List<User> list = new ArrayList<>();
+                list.add(user);
+                intent1.putExtra("list", (Serializable) list);
+                startActivity(intent1);
                 break;
             default:
                 break;
