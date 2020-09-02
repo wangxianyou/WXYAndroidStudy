@@ -1,14 +1,15 @@
-*.iml
 .gradle
 /local.properties
 .DS_Store
 build/
 /captures
-.externalNativeBuild
-### Example user template template
-### Example user template
-
-# IntelliJ project files
-.idea
-out
-gen
+*.iml
+.idea/
+app/src/main/gen/
+#package-lock.json
+#package.json
+java_pid820.hprof
+#/node_modules
+#app/src/main/assets/index.android.bundle
+#app/src/main/assets/index.android.bundle.meta
+#.flowconfig
