@@ -13,7 +13,7 @@
         android:theme="@style/StartTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:icon,label,name">
-        <activity android:name=".MainActivity">
+        <activity android:name=".xiangxue.CustomFlowLayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,8 @@
         <!--<activity android:name=".LowerLevel.TheFirstPass.Test1.activity.ActivityTestOne"></activity>-->
         <activity android:name=".lowerlevel.thefirstpass.test1_activity.activity.ActivityTestTwo" />
         <activity android:name=".lowerlevel.thefirstpass.test9_annotation.AnnotationActivity" />
-        <activity android:name=".xx.InjectViewActivity" />
+        <activity android:name=".xiangxue.InjectViewActivity"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
         <activity
             android:name=".lowerlevel.thefirstpass.test1_activity.activity.StandardActivity"
             android:process=":remote" />

@@ -93,4 +93,5 @@ dependencies {
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
     testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
     implementation 'com.tencent.bugly:crashreport:3.1.0'
+    implementation "com.airbnb.android:lottie:$lottieVersion"
 }

@@ -1,3 +1,5 @@
+package com.javatest;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,27 +12,66 @@ import androidx.annotation.NonNull;
  */
 public class JavaTest {
 
-    public static void main(String[] args) {
-//        JavaTest test = new JavaTest();
+    public static void main(String[] args) throws Exception {
+//        com.javatest.JavaTest test = new com.javatest.JavaTest();
 //        test.valueOfStr("ABCD");
 //        System.out.println(test.valueOfStr("ZZZZZZZZZZZZBACD"));
 
 
-        View rootView = new View(0, 0, 480, 720);
-        View view1 = new View(0, 0, 200, 200);
-        View view2 = new View(0, 200, 240, 520);
-        View view3 = new View(240, 200, 240, 520);
-        rootView.childViews.add(view1);
-        rootView.childViews.add(view2);
-        rootView.childViews.add(view3);
-        View view11 = new View(0, 0, 80, 80);
-        View view12 = new View(100, 100, 100, 100);
-        View view13 = new View(100, 100, 50, 50);
-        view1.childViews.add(view11);
-        view1.childViews.add(view12);
-        view1.childViews.add(view13);
-        findMostVisibleView(rootView);
-        System.out.println(findMostVisibleView(rootView).toString());
+//        View rootView = new View(0, 0, 480, 720);
+//        View view1 = new View(0, 0, 200, 200);
+//        View view2 = new View(0, 200, 240, 520);
+//        View view3 = new View(240, 200, 240, 520);
+//        rootView.childViews.add(view1);
+//        rootView.childViews.add(view2);
+//        rootView.childViews.add(view3);
+//        View view11 = new View(0, 0, 80, 80);
+//        View view12 = new View(100, 100, 100, 100);
+//        View view13 = new View(100, 100, 50, 50);
+//        view1.childViews.add(view11);
+//        view1.childViews.add(view12);
+//        view1.childViews.add(view13);
+//        findMostVisibleView(rootView);
+//        System.out.println(findMostVisibleView(rootView).toString());
+
+        MyThread thread = new MyThread(null);
+        thread.setName("线程---A");
+        MyThread thread1 = new MyThread(thread);
+        thread1.setName("线程---B");
+        MyThread thread2 = new MyThread(thread1);
+        thread2.setName("线程---C");
+        thread.start();
+        thread1.start();
+        thread2.start();
+    }
+
+    static class MyThread extends Thread {
+        Thread t;
+
+        public MyThread(Thread t) {
+            this.t = t;
+        }
+
+        @Override
+        public void run() {
+            super.run();
+            try {
+                if (t == null) {
+                    for (int i = 0; i < 50; i++) {
+                        sleep(1000);
+                        System.out.println(Thread.currentThread().getName());
+                    }
+                }else {
+                    t.join();
+                    for (int i = 0; i < 50; i++) {
+                        sleep(1000);
+                        System.out.println(Thread.currentThread().getName());
+                    }
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     int valueOfStr(String str) {
@@ -102,10 +143,10 @@ public class JavaTest {
         int size = rootView.childViews.size();
         int rootSize = rootView.width * rootView.height;
         int allChildSize = 0;
-        View firstView = rootView.childViews.get(size-1);
+        View firstView = rootView.childViews.get(size - 1);
         int currMaxSize = firstView.height * firstView.width;
         View currentMaxView = null;
-        for (int i = size-2; i >= 0; i--) {
+        for (int i = size - 2; i >= 0; i--) {
             View item = rootView.childViews.get(i);
             int currentSize = item.height * item.width;
             if (currentSize > currMaxSize) {

@@ -1,4 +1,4 @@
-package com.wxy.wxyandroidstudy.xx;
+package com.wxy.wxyandroidstudy.xiangxue;
 
 import android.os.Bundle;
 import android.widget.TextView;

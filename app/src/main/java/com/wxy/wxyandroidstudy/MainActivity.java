@@ -18,7 +18,7 @@ import com.wxy.bean.User;
 import com.wxy.demo.iflytek.SpeakToTxtActivity;
 import com.wxy.utils.ScreenUtils;
 import com.wxy.wxyandroidstudy.lowerlevel.thefirstpass.test1_activity.BaseActivity;
-import com.wxy.wxyandroidstudy.xx.InjectViewActivity;
+import com.wxy.wxyandroidstudy.xiangxue.InjectViewActivity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
