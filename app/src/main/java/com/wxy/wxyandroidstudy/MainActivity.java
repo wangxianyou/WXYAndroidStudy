@@ -27,7 +27,6 @@ import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import io.flutter.embedding.android.FlutterActivity;
 
 /**
  * @author wxy
@@ -86,11 +85,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 }, 2000);
                 break;
             case R.id.mFlutter:
-                Intent intent = FlutterActivity.withNewEngine()
-                                               .initialRoute("r1")
-                                               .build(this);
-                startActivity(intent);
-                break;
+//                Intent intent = FlutterActivity.withNewEngine()
+//                                               .initialRoute("r1")
+//                                               .build(this);
+//                startActivity(intent);
+//                break;
             case R.id.mAnno:
                 Intent intent1 = new Intent(MainActivity.this,
                         InjectViewActivity.class);
