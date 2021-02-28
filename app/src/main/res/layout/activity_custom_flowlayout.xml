@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:skin="http://schemas.android.com/apk/skin"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.wxy.wxyandroidstudy.xiangxue.view.FlowLayout
@@ -16,7 +17,9 @@
             android:layout_height="wrap_content"
             android:text="测试文本1"
             android:gravity="center"
-            android:background="@drawable/shape_tab"/>
+            android:textColor="@color/d_f8f8f8_n_333333_skin"
+            android:background="@drawable/shape_tab"
+            skin:enable="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,5 +58,11 @@
             android:background="@drawable/shape_tab"/>
 
     </com.wxy.wxyandroidstudy.xiangxue.view.FlowLayout>
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="切换夜间模式"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
