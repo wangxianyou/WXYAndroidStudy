@@ -13,7 +13,7 @@
         android:theme="@style/StartTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:icon,label,name">
-        <activity android:name=".xiangxue.CustomFlowLayoutActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />

@@ -7,6 +7,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -54,8 +55,29 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         float x = metrics.xdpi;
         Log.e("www", "屏幕密度： " + x);
+        findViewById(R.id.rootview).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.e("www", "onTouch： --rootview---");
+                return true;
+            }
+        });
+
+        findViewById(R.id.test_tv).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.e("www", "onTouch： --test_tv---"+event.getAction());
+                return false;
+            }
+        });
 
     }
+
+//    @Override
+//    public boolean dispatchTouchEvent(MotionEvent ev) {
+//        Log.e("www", "dispatchTouchEvent： -----");
+//        return false;
+//    }
 
     private void initListener() {
         btnIfly.setOnClickListener(this);

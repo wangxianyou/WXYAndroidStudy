@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'//这里添加
 apply plugin: 'kotlin-android-extensions'//这里添加
 apply plugin: 'com.jakewharton.butterknife'
 android {
-    compileSdkVersion 28
+    compileSdkVersion rootProject.ext.compile_sdk_version
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.wxy.wxyandroidstudy"
         minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion 28
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.TestActivity.runner.AndroidJUnitRunner"
