@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="12dp"
+        android:height="624dp"
+        android:drawable="@color/color_transparent">
+    </item>
+    <item
+        android:width="12dp"
+        android:height="50dp"
+        android:drawable="@mipmap/progress_bar_ic">
+    </item>
+</layer-list>

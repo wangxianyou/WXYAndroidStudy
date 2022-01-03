@@ -1,10 +1,10 @@
 package com.wxy.base
 
 import android.app.Application
-import com.bilibili.magicasakura.manage.SkinCompatManager
-import com.bilibili.magicasakura.manage.SkinNoneLoader
-import com.bilibili.magicasakura.manage.SkinPrefixBuildInLoader
 import com.squareup.leakcanary.LeakCanary
+//import com.bilibili.magicasakura.manage.SkinCompatManager
+//import com.bilibili.magicasakura.manage.SkinNoneLoader
+//import com.bilibili.magicasakura.manage.SkinPrefixBuildInLoader
 import com.tencent.bugly.crashreport.CrashReport
 
 
@@ -24,9 +24,9 @@ class MyApp : Application() {
 
     private fun initSkin() {
         // 基础控件换肤初始化
-        SkinCompatManager.withoutActivity(this)
-                .addStrategy(SkinPrefixBuildInLoader())
-                .addStrategy(SkinNoneLoader())
+//        SkinCompatManager.withoutActivity(this)
+//                .addStrategy(SkinPrefixBuildInLoader())
+//                .addStrategy(SkinNoneLoader())
 //                .addStrategy(SkinZipLoader())
 //                .loadSkin(SkinZipUtils.SKIN_VERSION_DTP)
     }
